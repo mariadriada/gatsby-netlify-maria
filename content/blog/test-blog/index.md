@@ -1,10 +1,9 @@
 ---
-title: Hello World Maria
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World Maria"
+title: Test post
+date: "2015-05-01T22:12:03.284ZTest postHello World Maria"
 ---
 
-This is my first post on my new fake blog! How exciting!
+eSTO ES UNA PRUEBA!!!!
 
 I'm sure I'll write a lot more interesting things in the future.
 
