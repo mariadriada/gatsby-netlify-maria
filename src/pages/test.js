@@ -5,7 +5,7 @@ export default function Component() {
   const [message, setMessage] = useState("")
 
   const fetchData = async () => {
-    const data = await axios.get("../api/hello-world")
+    const data = await axios.get("/.netlify/functions/hello-world")
     setMessage(data.data.message)
   }
 
