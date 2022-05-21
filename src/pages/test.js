@@ -2,16 +2,30 @@ import React, { useState, useEffect } from "react"
 import axios from "axios"
 
 export default function Component() {
-  const [message, setMessage] = useState("")
+  const [data, setData] = useState({})
+  const { title, description, items } = data || {}
 
   const fetchData = async () => {
-    const data = await axios.get("/.netlify/functions/hello-world")
-    setMessage(data.data.message)
+    const data = await axios.get("/.netlify/functions/default-data-test")
+    setData(data.data)
   }
 
   useEffect(() => {
     fetchData()
   }, [])
 
-  return <h1>El texto del service es: {message}</h1>
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <div>
+        {items &&
+          items.map(({ id, name, link }) => (
+            <a href={link} key={id} target="_blank">
+              {name}
+            </a>
+          ))}
+      </div>
+    </div>
+  )
 }

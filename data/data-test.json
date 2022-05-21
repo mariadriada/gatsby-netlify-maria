@@ -1,0 +1,21 @@
+{
+  "title": "Test page",
+  "description": "THis is a new page to test netlify functions anad emotion",
+  "items": [
+    {
+      "id": 1,
+      "name": "item 1",
+      "link": "https://www.google.com"
+    },
+    {
+      "id": 2,
+      "name": "item 2",
+      "link": "https://www.google.com"
+    },
+    {
+      "id": 3,
+      "name": "item 1",
+      "link": "https://www.google.com"
+    }
+  ]
+}
